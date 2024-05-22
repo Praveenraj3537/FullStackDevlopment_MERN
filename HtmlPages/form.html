@@ -10,17 +10,60 @@
     <body>
         <h2>Signup Form</h2>
 
-        <form action="" method="get">
+        <form action="./resultPage.html" target="_self" method="post">
+            <!-- By using GET method all the values are displayed in url
+            but using POST method values are not displayed in URL
+            -->
             <label for="FirstName">FirstName:</label>
-            <input type="text" id="fname" name="fname">
+            <input type="text" id="fname" name="fname" requipred> <br>
 
             <label for="LastName">LastName:</label>
-            <input type="text" id="lname" name="lname">
+            <input type="text" id="lname" name="lname" required> <br>
 
             <label for="Age">Age:</label>
-            <input type="number" name="age" id="age">
+            <input type="number" name="age" id="age"> <br>
 
-            <button onclick="" type="button">Submit</button>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required> <br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required> <br>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" required> <br>
+
+            <!-- <button onclick="" type="button">Submit</button> -->
+            <hr>
+
+            <label for="Radio">Option 1</label>
+            <input type="radio" name="radio" id="radio">
+
+            <!-- Make id as single name for all the radio options as we need select
+            one option among all -->
+            <label for="Radio">Option 2</label>
+            <input type="radio" name="radio" id="radio">
+
+            <label for="Radio">Option 3</label>
+            <input type="radio" name="radio" id="radio">
+
+            <label for="Radio">Option 4</label>
+            <input type="radio" name="radio" id="radio">
+
+            <hr>
+            <label for="CheckBox">Choice 1</label>
+            <input type="checkbox" name="opt1" id="opt1">
+
+            <label for="CheckBox">Choice 2</label>
+            <input type="checkbox" name="opt2" id="opt2">
+
+            <label for="CheckBox">Choice 3</label>
+            <input type="checkbox" name="opt3" id="opt3">
+
+            <input type="submit" value="Press">
+
+
+
+
         </form>
 
     </body>

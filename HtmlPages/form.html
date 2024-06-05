@@ -10,12 +10,12 @@
     <body>
         <h2>Signup Form</h2>
 
-        <form action="./resultPage.html" target="_self" method="post" autocomplete="on">
-            <!-- <form action="./resultPage.html" target="_self" method="post" autocomplete="on" novalidate> -->
-            <!-- By using GET method all the values are displayed in url
+        <!-- <form action="./resultPage.html" target="_self" method="post" autocomplete="on"> -->
+        <!-- <form action="./resultPage.html" target="_self" method="post" autocomplete="on" novalidate> -->
+        <!-- By using GET method all the values are displayed in url
             but using POST method values are not displayed in URL
             -->
-            <!-- <label for="FirstName">FirstName:</label>
+        <!-- <label for="FirstName">FirstName:</label>
             <input type="text" id="fname" name="fname" required> <br>
 
             <label for="LastName">LastName:</label>
@@ -33,15 +33,15 @@
             <label for="confirmPassword">Confirm Password:</label>
             <input type="password" name="confirmPassword" id="confirmPassword" required> <br> -->
 
-            <!-- <button onclick="" type="button">Submit</button> -->
-            <!-- <hr>
+        <!-- <button onclick="" type="button">Submit</button> -->
+        <!-- <hr>
 
             <label for="Radio">Option 1</label>
             <input type="radio" name="radio" id="radio"> -->
 
-            <!-- Make id as single name for all the radio options as we need select
+        <!-- Make id as single name for all the radio options as we need select
             one option among all -->
-            <!-- <label for="Radio">Option 2</label>
+        <!-- <label for="Radio">Option 2</label>
             <input type="radio" name="radio" id="radio">
 
             <label for="Radio">Option 3</label>
@@ -61,16 +61,16 @@
             <input type="checkbox" name="opt3" id="opt3">
             <hr> -->
 
-            <label for="cars">Choose Cars:</label>
+        <!-- <label for="cars">Choose Cars:</label>
             <select name="cars" id="cars">
                 <option value="BenZ">Merecedes Benz</option>
                 <option value="lambo">Lamborgini</option>
                 <option value="porsche">Porsche</option>
                 <option value="ferrai">Ferrai</option>
-            </select>
+            </select> -->
 
 
-            <textarea name="Feedback" id="Feedback" cols="40" rows="10"></textarea>
+        <!-- <textarea name="Feedback" id="Feedback" cols="40" rows="10"></textarea>
 
             <input type="submit" value="Press">
             <hr>
@@ -133,10 +133,10 @@
             <h2>PhoneNumber</h2>
             <label for="phone">PhoneNumber:</label>
             <input type="text" id="phone" name="phone" pattern="[0-9]{0,10}" maxlength="10"
-                title="Enter 10 Numbers Only" required>
-            <!-- <input type="text" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> -->
+                title="Enter 10 Numbers Only" required> -->
+        <!-- <input type="text" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> -->
 
-            <!-- 
+        <!-- 
             <hr>
             <h2>AutoFocus</h2>
             <label for="fname">First name:</label><br>
@@ -160,8 +160,36 @@
             <input type="submit" value="Submit">
             <input type="submit" formnovalidate="formnovalidate" value="Submit without validation"> -->
 
-            <input type="submit" value="Submit">
-        </form>
+        <!-- <input type="submit" value="Submit">
+        </form> -->
+
+        <h1>CANVAS</h1>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML canvas tag.</canvas>
+        <canvas id="mySecondCanvas" width="200" height="100" style="border:1px solid #080000;"></canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+        </script>
+
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0, 0);
+            ctx.lineTo(200, 100);
+            ctx.stroke();
+        </script>
+
+        <script>
+            var c = document.getElementById("mySecondCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.strokeText("Hello World", 10, 50);
+        </script>
 
     </body>
 

@@ -8,11 +8,74 @@
     </head>
 
     <body>
-        <video width="320" height="240" controls>
-            <source src="../assets/test-video.mp4" type="video/mp4">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="320" height="240" controls style="border:1px solid #080000;">
+            <source src="../assets/videos/test-video.mp4" type="video/mp4">
             <!-- <source src="movie.ogg" type="video/ogg"> -->
             Your browser does not support the video tag.
         </video>
+
+        <video id="video2" width="320" height="240" autoplay style="border:1px solid #080000;">
+            <source src="../assets/videos/Cant.mp4" type="video/mp4">
+            <!-- <source src="movie.ogg" type="video/ogg"> -->
+            Your browser does not support the video tag.
+        </video>
+
+        <video id="video3" width="320" height="240" autoplay muted style="border:1px solid #080000;">
+            <source src="../assets/videos/Lougawou.mp4" type="video/mp4">
+            <!-- <source src="movie.ogg" type="video/ogg"> -->
+            Your browser does not support the video tag.
+        </video>
+        <hr>
+        <h1>Audio's</h1>
+
+        <audio controls autoplay>
+            <!-- <source src="horse.ogg" type="audio/ogg"> -->
+            <source src="../assets/audio/Ekadantaya.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio controls muted>
+            <!-- <source src="horse.ogg" type="audio/ogg"> -->
+            <source src="../assets/audio/YaAli.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script>
+            var myVideo = document.getElementById("video3");
+
+            function playPause() {
+                if (myVideo.paused)
+                    myVideo.play();
+                else
+                    myVideo.pause();
+            }
+
+            function makeBig() {
+                myVideo.width = 720;
+            }
+
+            function makeSmall() {
+                myVideo.width = 320;
+            }
+
+            function makeNormal() {
+                myVideo.width = 420;
+            } 
+        </script>
+
+        <hr>
+        <h2>YouTube</h2>
+        <iframe width="420" height="315" src="https://www.youtube.com/watch?v=jE8JvByDKy8"></iframe>
+        
+
+
+
+
     </body>
 
 </html>

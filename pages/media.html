@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multimedia</title>
+        <!-- <link rel="stylesheet" href="../css/media.css"> -->
+    </head>
+
+    <body>
+        <!-- <body style="background:url(../assets/ImagesFolder/car.jpeg)"> -->
+        <p>This is page will contain only media related tags</p>
+        <button class="button" onclick="playPause()">Play/Pause</button>
+        <button class="button bigbutton" onclick="makeBig()">Big</button>
+        <button class="button smallbutton" onclick="makeSmall()">Small</button>
+        <button class="button normalbutton" onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video class="video" id="video1" width="320" height="240" controls style="border:1px solid #080000;">
+            <source src="../assets/videos/test-video.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+        <video class="video" id="video2" width="320" height="240" autoplay style="border:1px solid #080000;">
+            <source src="../assets/videos/Cant.mp4" type="video/mp4">
+            <!-- <source src="movie.ogg" type="video/ogg"> -->
+            Your browser does not support the video tag.
+        </video>
+
+        <video class="video" id="video3" width="320" height="240" autoplay muted style="border:1px solid #080000;">
+            <source src="../assets/videos/Lougawou.mp4" type="video/mp4">
+            <!-- <source src="movie.ogg" type="video/ogg"> -->
+            Your browser does not support the video tag.
+        </video>
+        <hr>
+        <h1>Audio's</h1>
+
+        <audio controls>
+            <!-- <source src="horse.ogg" type="audio/ogg"> -->
+            <source src="../assets/audio/Ekadantaya.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio controls muted>
+            <!-- <source src="horse.ogg" type="audio/ogg"> -->
+            <source src="../assets/audio/YaAli.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script>
+            var myVideo = document.getElementById("video3");
+
+            function playPause() {
+                if (myVideo.paused)
+                    myVideo.play();
+                else
+                    myVideo.pause();
+            }
+
+            function makeBig() {
+                myVideo.width = 720;
+            }
+
+            function makeSmall() {
+                myVideo.width = 320;
+            }
+
+            function makeNormal() {
+                myVideo.width = 420;
+            } 
+        </script>
+
+        <hr>
+        <h2>YouTube</h2>
+        <iframe width="720" height="320" src="https://www.youtube.com/embed/MTmkYggAPPU"
+            title="Innastu Bekenna Hrudayakke Rama | Suprabha KV | LYRICAL VIDEO"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+        <hr>
+        <h2>Location</h2>
+        <button onclick="getLocation()">Try It</button>
+
+        <p id="demo"></p>
+
+        <script>
+            const x = document.getElementById("demo");
+
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+            }
+        </script>
+
+    </body>
+
+</html>

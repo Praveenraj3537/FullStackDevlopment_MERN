@@ -80,6 +80,30 @@
             title="Innastu Bekenna Hrudayakke Rama | Suprabha KV | LYRICAL VIDEO"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <hr>
+        <h2>Location</h2>
+        <button onclick="getLocation()">Try It</button>
+
+        <p id="demo"></p>
+
+        <script>
+            const x = document.getElementById("demo");
+
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+            }
+        </script>
+
     </body>
 
 </html>

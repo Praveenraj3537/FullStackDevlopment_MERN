@@ -1,0 +1,37 @@
+p{
+    text-align: center;
+    text-decoration: solid underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+.button{
+    background-color: brown;
+    border: 2px;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: large;
+    cursor: pointer;    
+}
+
+.bigbutton{
+    background-color:blueviolet; 
+}
+
+.smallbutton{
+    background-color: blue;
+}
+
+.normalbutton {
+    background-color: chocolate;
+}
+
+.video{
+    border: 5px;
+    border-radius: 5px;
+    border-color: chartreuse;
+    max-width: 500px;
+    /* min-width: none; */
+}

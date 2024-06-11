@@ -1,0 +1,41 @@
+*{
+    color: chartreuse;
+}
+
+body{
+    /* background-image: url("../assets/ImagesFolder/car.jpeg"); */
+    background-color: rgb(171, 171, 198);
+}
+
+p{
+    text-align: center;
+    font-size: 50px;
+    border: 5px solid tomato;
+}
+
+#first{
+    font-size: 25px;
+    text-align: left;
+    color:blue;
+}
+
+.paragraph{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 18px;
+    text-align: justify;
+    font-style: italic;
+}
+
+.secondPara{
+    font-style: normal;
+    color: brown;
+}
+p.center{
+    font-weight: 800;
+}
+
+.imageClass{
+    background-image: url('../assets/ImagesFolder/car.jpeg');
+    background-size:cover;
+    height: 700px;
+}

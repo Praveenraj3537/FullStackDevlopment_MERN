@@ -1,14 +1,16 @@
 body {
     background-color: rgb(210, 234, 243);
+    font-size: 25px;
 }
 
 h2 {
-    color: rgb(247, 146, 146);
-    text-align: center;
-    font-family: verdana;
+    /* color: rgb(247, 146, 146); */
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+
 }
 
 p {
     font-family: verdana;
-    font-size: 20px;
+    font-size: 50px;
 }

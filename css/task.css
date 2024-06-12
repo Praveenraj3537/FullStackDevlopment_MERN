@@ -1,3 +1,5 @@
 p {
-    color: chartreuse;
+    color: #0000ee;
+    background-color: rgb( 100, 100, 210);
+    opacity: 1;
 }

@@ -1,0 +1,49 @@
+.align {
+    text-align: justify;
+    font-size: 50px;
+}
+
+.align:hover {
+    text-align: left;
+}
+
+.align::first-letter {
+    color: red;
+    font-size: 100px;
+}
+
+.carimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div>p {
+    text-align: right;
+}
+
+div>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div p {
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+div+p {
+    background-color: brown;
+    color: yellow;
+    font-size: 50px;
+}
+
+.input:focus {
+    background-color: aquamarine;
+    /* height: 15px; */
+}
+
+.header::before {
+    content: url('../assets/ImagesFolder/heart.svg');
+}

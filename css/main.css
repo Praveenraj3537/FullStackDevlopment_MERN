@@ -3,14 +3,30 @@ body {
     font-size: 25px;
 }
 
-h2 {
-    /* color: rgb(247, 146, 146); */
-    text-align: left;
-    font-family:'Times New Roman', Times, serif;
-
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-p {
-    font-family: verdana;
-    font-size: 50px;
+li {
+    float: right;
+}
+
+a {
+
+    display: block;
+    background-color: burlywood;
+    width: 100px;
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.active {
+    background-color: blueviolet;
 }

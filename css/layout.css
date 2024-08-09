@@ -1,5 +1,9 @@
 body {
     margin: 0;
+    border: 25px solid transparent;
+    padding: 10px;
+    border-image: url("../assets/ImagesFolder/border_image.png") 30 stretch;
+    background-color: aquamarine
 }
 
 * {
@@ -7,6 +11,7 @@ body {
 }
 
 .header {
+    margin: 0;
     background-color: #f1f1f1;
     padding: 20px;
     text-align: center;

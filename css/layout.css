@@ -42,9 +42,10 @@ body {
 
 .column {
     float: left;
-    width: 33.33%;
-    padding: 10px;
+    width: 200px;
+    padding: min(10%, 15px);
     border: 2px solid black;
+    border-radius: 15px 50px 10px;
 }
 
 .row::after {

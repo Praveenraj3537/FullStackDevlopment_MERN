@@ -1,0 +1,61 @@
+div {
+    width: 200px;
+    height: 100px;
+    font-weight: bold;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+}
+
+#div1 {
+    animation-timing-function: linear;
+    background-color: aquamarine;
+}
+
+#div2 {
+    animation-timing-function: ease;
+    background-color: blue;
+}
+
+#div3 {
+    animation-timing-function: ease-in;
+    background-color: blueviolet;
+}
+
+#div4 {
+    animation-timing-function: ease-out;
+    background-color: cadetblue;
+}
+
+#div5 {
+    animation-timing-function: ease-in-out;
+    background-color: yellowgreen;
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 94%;
+    }
+}
+
+img {
+    position: relative;
+    animation-name: car;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes car {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 80%;
+    }
+}

@@ -1,0 +1,20 @@
+.flex-container {
+    display: flex;
+    background-color: rgb(219, 131, 54);
+    /* flex-direction: column; */
+    justify-content: center;
+    /* flex-direction: column-reverse; */
+}
+
+.flex-container>a {
+    text-decoration: none;
+    background-color: rgb(114, 144, 234);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 25px;
+    color: black;
+    width: 100px;
+
+}

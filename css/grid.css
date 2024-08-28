@@ -22,7 +22,7 @@
     grid-column-end: 3;
 } */
 
-/* .grid-item4 {
+.grid-item4 {
     grid-column-start: 2;
     grid-column-end: 4;
 }
@@ -30,7 +30,8 @@
 .grid-item5 {
     grid-column-start: 1;
     grid-column-end: 4;
-} */
-.grid-item8 {
-    grid-area: 2 / 3 / 4/ 5;
 }
+
+/* .grid-item8 {
+    grid-area: 2 / 3 / 4/ 5;
+} */
